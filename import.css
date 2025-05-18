@@ -55,7 +55,7 @@
 	}
 
 	nav[class*="privateChannels__"] > div[class*="scroller__"], nav[aria-label="Servers sidebar"] {
-		margin-bottom: calc(var(--custom-app-panels-height, 0));
+		margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;
 	}
 
 	[class*="sidebarList_"] #channels {
@@ -96,6 +96,7 @@
 @container style(--\\--compact-server-list: true) {
 	nav[aria-label="Servers sidebar"] {
 		--custom-guild-list-width: 56px;
+		--custom-guild-list-padding: 8px;
 	}
 }
 
