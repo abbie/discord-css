@@ -1,0 +1,268 @@
+@container style(--\\--compact-title-bar: true) {
+	body {
+		--custom-app-top-bar-height: 28px;
+	}
+
+	div[data-windows="true"][class*="bar_"] {
+		--space-32: var(--custom-app-top-bar-height);
+	}
+}
+
+@container style(--\\--compact-input-box: true) {
+	:is(form, form > div) {
+		& > div[class*="channelBottomBarArea"] {
+			--custom-channel-textarea-text-area-height: 44px;
+		}
+
+		& > [class*="wrapper__"] {
+			padding: 10px;
+			& > div {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@container style(--\\--compact-context-menu: true) {
+	div[class*="clickTrapContainer"] div[role="menu"] {
+		div[role="group"] {
+			padding: 0;
+		}
+
+		div[data-menu-item][role="menuitem"] {
+			padding: 4px;
+
+			&:not([class*="colorDanger_"], :hover) div[class*="label_"] {
+				color: var(--interactive-normal);
+			}
+		}
+	}
+}
+
+@container style(--\\--compact-user-area: true) {
+	section[aria-label="User area"] {
+		left: 0 !important;
+		bottom: 0 !important;
+		border-radius: 0 !important;
+		border: none !important;
+		width: 100% !important;
+		background-color: color-mix(in oklab, var(--background-tertiary), #000 11%) !important;
+
+		& > [class*="wrapper_"] > [class*="container_"] {
+			--space-xs: 6px;
+		}
+	}
+
+	nav[class*="privateChannels__"] > div[class*="scroller__"], nav[aria-label="Servers sidebar"] {
+		margin-bottom: calc(var(--custom-app-panels-height, 0));
+	}
+
+	[class*="sidebarList_"] #channels {
+		margin-bottom: 0;
+	}
+
+	[class*="activityPanel_"] {
+		background-color: transparent;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	[class*="rtcConnectionStatusWrapper__"] {
+		[class*="labelWrapper__"] [class*="rtcConnectionStatusLabel__"] > div > div {
+			font-size: 100%;
+		}
+
+		[class*="rtcConnectionStatus__"] + a > div > div {
+			font-size: 100%;
+		}
+	}
+}
+
+@container style(--\\--compact-channel-categories: true) {
+	ul[aria-label="Channels"] {
+		li[class*="containerDefault_"]:not([class*="containerDefault__"]) a[class*="link__"] {
+			--radius-sm: 5px;
+		}
+
+		li[class*="containerDefault__"] h3:is([class*="name__"], [class*="header__"]) > div {
+			font-size: 95%;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@container style(--\\--compact-server-list: true) {
+	nav[aria-label="Servers sidebar"] {
+		--custom-guild-list-width: 56px;
+	}
+}
+
+/* --------------------------------------- */
+
+@container style(--\\--hide-nameplates: true) {
+	div[class*="childContainer__"][class*="nameplated__"] {
+		padding-right: inherit;
+		& > div[class*="container__"][style] {
+			display: none;
+		}
+	}
+
+	li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]:is([class*="fadeIn__"], :has(> div[class*="videoContainer__"])) {
+		display: none;
+	}
+
+	[class*="closeButtonPlated__"] {
+		opacity: 0.7;
+		[class*="innerCloseButtonPlated"] {
+			background-color: transparent;
+		}
+	}
+}
+
+@container style(--\\--hide-guild-tags: true) {
+	[role="button"]:is([class*="clanTag__"], [class*="clanTagChiplet_"]),
+	[class*="container__"] > [class*="tags__"] > span:has(> [class*="chipletContainerInline_"]) {
+		display: none;
+	}
+}
+
+@container style(--\\--hide-profile-effects: true) {
+	[class*="profileEffects__"] { display: none; }
+}
+
+@container style(--\\--hide-avatar-decorations: true) {
+	[class*="avatarDecoration__"] { display: none; }
+}
+
+@container style(--\\--hide-gradient-glow-usernames: true) {
+	[class*="ColorGradient_"] {
+		& [class*="nameGlow__"], & ::after { display: none; }
+		& [class*="usernameGradient_"] {
+			background: none;
+			color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+			-webkit-text-fill-color: initial;
+		}
+	}
+}
+
+@container style(--\\--hide-server-boost-goal: true) {
+	div:has(> div[class*="textArea"] > div[class*="goalTextContainer"]) {
+		display: none;
+	}
+}
+
+@container style(--\\--hide-server-activity: true) {
+	h3[class*="membersGroup"]:has(svg path[d^="M10.56 1.1c"]) {
+		display: none;
+	}
+
+	div[aria-label="Members"]>div:not([class], [role], [aria-label], [aria-role]):has(> div > div[class*="openOnHover"]) {
+		display: none;
+	}
+}
+
+@container style(--\\--hide-user-activity: true) {
+	div[class*="activityPanel_"] { display: none; }
+}
+
+@container style(--\\--hide-context-menu-quick-reactions: true) {
+	div[class*="clickTrapContainer"] div[role="menu"] :is([id*="message-quickreact"], [id*="message-actions-quickreact"]) {
+		display: none;
+	}
+}
+
+@container style(--\\--hide-hover-quick-reactions: true) {
+	div[aria-label="Message Actions"] > div {
+		& > [aria-label^="Click to react with"] { display: none; }
+		& > [class*="separator"] { display: none; }
+	}
+}
+
+@container style(--\\--hide-image-edit-button: true) {
+	[aria-label="Edit Image with Apps"] { display: none; }
+}
+
+@container style(--\\--hide-gif-button: true) {
+	button[aria-label="Open GIF picker"] { display: none; }
+}
+
+@container style(--\\--hide-sticker-button: true) {
+	button[aria-label="Open sticker picker"] { display: none; }
+}
+
+@container style(--\\--hide-emoji-button: true) {
+	button[aria-label="Select emoji"] { display: none; }
+}
+
+@container style(--\\--hide-apps-button: true) {
+	button[aria-label="Apps"] { display: none; }
+}
+
+@container style(--\\--hide-gift-button: true) {
+	button[aria-label="Send a gift"] { display: none; }
+	:is(form, form > div) > div[class*="channelBottomBarArea"] div[class*="buttons__"]:has(> button[aria-label="Send a gift"]) {
+		gap: 0;
+	}
+}
+
+@container style(--\\--hide-shop-button: true) {
+	li[role="listitem"]:has(> div > a[href*="/shop"]) { display: none; }
+}
+
+@container style(--\\--hide-nitro-button: true) {
+	li[role="listitem"]:has(> div > a[href*="/store"]) { display: none; }
+}
+
+@container style(--\\--hide-nitro-upsells: true) {
+	[class*="upsellContainer__"] { display: none; }
+}
+
+@container style(--\\--hide-vencord-desktop-platform-indicator: true) {
+	.vc-platform-indicator svg[aria-label="Desktop"] { display: none; }
+}
+
+@container style(--\\--hide-cluttery-badges: true) {
+	[aria-label="User Badges"] {
+		[aria-label="Active Developer"],
+		[aria-label="Completed a Quest"],
+		[aria-label^="Originally known as"],
+		[aria-label^="HypeSquad"] {
+			display: none;
+		}
+	}
+}
+
+/* --------------------------------------- */
+
+@container style(--\\--darker-scrollbar: true) {
+	body, [class*="scroller__"] {
+		--scrollbar-auto-track: #00001116;
+		--scrollbar-auto-thumb: #0005;
+	}
+}
+
+@container style(--\\--darker-hovered-message: true) {
+	body {
+		--background-message-hover: #00001116;
+	}
+}
+
+@container style(--\\--prevent-sidebar-resizing: true) {
+	[class*="sidebarResizeHandle_"] { display: none !important; }
+}
+
+@container style(--\\--fix-minor-icon-misalignments: true) {
+	svg[class*="ownerIcon__"] {
+		top: -1px;
+	}
+
+	svg[class*="flowerStar__"] path[d^="m16 7.6c0"] {
+		transform: translateY(-0.5px);
+	}
+
+	[class*="guildDropdown_"] svg path[d^="M5.3 9.3a1"] {
+		transform: translateY(2px);
+	}
+}
