@@ -209,6 +209,12 @@
 	}
 }
 
+@container style(--\\--hide-help-button: true) {
+	div[data-windows="true"] a[href="https://support.discord.com"] {
+		display: none;
+	}
+}
+
 @container style(--\\--hide-shop-button: true) {
 	li[role="listitem"]:has(> div > a[href*="/shop"]) { display: none; }
 }
