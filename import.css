@@ -140,12 +140,9 @@
 
 @container style(--\\--hide-gradient-glow-usernames: true) {
 	[class*="ColorGradient_"] {
-		& [class*="nameGlow__"], & ::after { display: none; }
-		& [class*="usernameGradient_"] {
-			background: none;
-			color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
-			-webkit-text-fill-color: initial;
-		}
+		background: none;
+		color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+		-webkit-text-fill-color: initial;
 	}
 }
 
