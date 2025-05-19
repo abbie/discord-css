@@ -34,6 +34,7 @@ Place the following into Vencord's QuickCSS:
 	--\\--hide-emoji-button: false;
 	--\\--hide-apps-button: true;
 	--\\--hide-gift-button: true;
+	--\\--hide-help-button: false;
 	--\\--hide-shop-button: false;
 	--\\--hide-nitro-button: true;
 	--\\--hide-nitro-upsells: true;
