@@ -135,7 +135,7 @@
 }
 
 @container style(--\\--hide-avatar-decorations: true) {
-	[class*="avatarDecoration__"] { display: none; }
+	[class*="avatarDecoration_"] { display: none; }
 }
 
 @container style(--\\--hide-gradient-glow-usernames: true) {
