@@ -124,7 +124,8 @@
 
 @container style(--\\--hide-guild-tags: true) {
 	[role="button"]:is([class*="clanTag__"], [class*="clanTagChiplet_"]),
-	[class*="container__"] > [class*="tags__"] > span:has(> [class*="chipletContainerInline_"]) {
+	[class*="container__"] > [class*="tags__"] > span:has(> [class*="chipletContainerInline_"]),
+	span:has(> span[class*="clanTagChiplet_"]) {
 		display: none;
 	}
 }
