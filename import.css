@@ -41,7 +41,7 @@
 }
 
 @container style(--\\--compact-user-area: true) {
-	section[aria-label="User area"] {
+	section[aria-label="User area"], div[class*="sidebar_"] > section[aria-label] {
 		left: 0 !important;
 		bottom: 0 !important;
 		border-radius: 0 !important;
@@ -54,7 +54,7 @@
 		}
 	}
 
-	nav[class*="privateChannels__"] > div[class*="scroller__"], nav[aria-label="Servers sidebar"] {
+	nav[class*="privateChannels__"] > div[class*="scroller__"], nav[aria-label="Servers sidebar"], nav[class*="guilds_"] {
 		margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;
 	}
 
@@ -157,7 +157,7 @@
 		display: none;
 	}
 
-	div[aria-label="Members"]>div:not([class], [role], [aria-label], [aria-role]):has(> div > div[class*="openOnHover"]) {
+	:is(div[aria-label="Members"], div[class*="members_"] > div[role="list"][aria-label]) > div:not([class], [role], [aria-label], [aria-role]):has(> div > div[class*="openOnHover"]) {
 		display: none;
 	}
 }
@@ -173,26 +173,38 @@
 }
 
 @container style(--\\--hide-hover-quick-reactions: true) {
-	div[aria-label="Message Actions"] > div {
-		& > [aria-label^="Click to react with"] { display: none; }
+	:is(div[aria-label="Message Actions"], div[class*="message__"] > div[class*="buttonContainer_"] > div[class*="buttons__"]) > div {
+		& > :is([aria-label^="Click to react with"], div[class*="hoverBarButton_"]:has(> div[class*="icon_"])) { display: none; }
 		& > [class*="separator"] { display: none; }
 	}
 }
 
 @container style(--\\--hide-image-edit-button: true) {
-	[aria-label="Edit Image with Apps"] { display: none; }
+	[aria-label="Edit Image with Apps"],
+	div[class*="imageContainer_"] > div[class*="hoverButtonGroup_"] > div[class*="hoverButton_"]:has(> div > svg path[d^=" M-6.554999828338623,1"]) {
+		display: none;
+	}
 }
 
 @container style(--\\--hide-gif-button: true) {
-	button[aria-label="Open GIF picker"] { display: none; }
+	button[aria-label="Open GIF picker"],
+	div.expression-picker-chat-input-button > button:has(svg path[d^=" M-7,-10 C-8.65"]) {
+		display: none;
+	}
 }
 
 @container style(--\\--hide-sticker-button: true) {
-	button[aria-label="Open sticker picker"] { display: none; }
+	button[aria-label="Open sticker picker"],
+	div.expression-picker-chat-input-button > button:has(svg path[d^=" M-6,-10 C-6,-10 6,-10 6,-10 C8.20"]) {
+		display: none;
+	}
 }
 
 @container style(--\\--hide-emoji-button: true) {
-	button[aria-label="Select emoji"] { display: none; }
+	button[aria-label="Select emoji"],
+	button[class*="emojiButtonNormal_"] {
+		display: none;
+	}
 }
 
 @container style(--\\--hide-apps-button: true) {
@@ -200,8 +212,12 @@
 }
 
 @container style(--\\--hide-gift-button: true) {
-	button[aria-label="Send a gift"] { display: none; }
-	:is(form, form > div) > div[class*="channelBottomBarArea"] div[class*="buttons__"]:has(> button[aria-label="Send a gift"]) {
+	button[aria-label="Send a gift"],
+	div[class*="textArea_"] + div[class*="buttons_"] > button:has(svg path[d^=" M-7,10 C-8.1049995"]) {
+		display: none;
+	}
+
+	div[class*="textArea_"] + div[class*="buttons_"]:has(> button[aria-label="Send a gift"],> button svg path[d^=" M-7,10 C-8.1049995"]) {
 		gap: 0;
 	}
 }
@@ -229,6 +245,7 @@
 }
 
 @container style(--\\--hide-cluttery-badges: true) {
+	/* TODO: make selectors language independent */
 	[aria-label="User Badges"] {
 		[aria-label="Active Developer"],
 		[aria-label="Completed a Quest"],
