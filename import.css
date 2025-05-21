@@ -30,7 +30,7 @@
 			padding: 0;
 		}
 
-		div[data-menu-item][role="menuitem"] {
+		div:is([role="menuitem"],[role="menuitemcheckbox"]), div[class*="hideInteraction_"] {
 			padding: 4px;
 
 			&:not([class*="colorDanger_"], :hover) div[class*="label_"] {
