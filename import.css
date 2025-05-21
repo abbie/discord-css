@@ -196,7 +196,7 @@
 }
 
 @container style(--\\--hide-apps-button: true) {
-	button[aria-label="Apps"] { display: none; }
+	[class*="channelAppLauncher"] { display: none !important; }
 }
 
 @container style(--\\--hide-gift-button: true) {
