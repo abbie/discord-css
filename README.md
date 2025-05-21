@@ -3,7 +3,7 @@
 Place the following into Vencord's QuickCSS:
 
 ```less
-@import url('https://raw.githubusercontent.com/abbie/discord-css/refs/heads/main/import.css');
+@import url('https://abbie.github.io/discord-css/import.css');
 
 :root {
 	/* --------------------------------------- */
