@@ -226,7 +226,7 @@
 }
 
 @container style(--\\--hide-help-button: true) {
-	div[data-windows="true"] a[href="https://support.discord.com"] {
+	div[data-fullscreen] div[class*="trailing_"] a[href="https://support.discord.com"] {
 		display: none;
 	}
 }
