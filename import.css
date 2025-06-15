@@ -24,6 +24,10 @@
 				margin-right: 0;
 			}
 		}
+
+		div[class*="textArea_"] + div[class*="buttons_"] {
+			gap: 0;
+		}
 	}
 }
 
@@ -216,12 +220,8 @@
 
 @container style(--\\--hide-gift-button: true) {
 	button[aria-label="Send a gift"],
-	div[class*="textArea_"] + div[class*="buttons_"] > button:has(svg path[d^=" M-7,10 C-8.1049995"]) {
+	div[class*="textArea_"] + div[class*="buttons_"] > div:has(> button svg path[d^=" M-7,10 C-8.1049995"]) {
 		display: none;
-	}
-
-	div[class*="textArea_"] + div[class*="buttons_"]:has(> button[aria-label="Send a gift"],> button svg path[d^=" M-7,10 C-8.1049995"]) {
-		gap: 0;
 	}
 }
 
