@@ -37,6 +37,7 @@ Place the following into Vencord's QuickCSS:
 	--\\--hide-help-button: false;
 	--\\--hide-shop-button: false;
 	--\\--hide-nitro-button: true;
+	--\\--hide-active-now: true;
 	--\\--hide-nitro-upsells: true;
 	--\\--hide-vencord-desktop-platform-indicator: true;
 	--\\--hide-cluttery-badges: false;
