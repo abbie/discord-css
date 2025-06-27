@@ -239,6 +239,10 @@
 	li[role="listitem"]:has(> div > a[href*="/store"]) { display: none; }
 }
 
+@container style(--\\--hide-active-now: true) {
+	div[class*="nowPlayingColumn_"] { display: none; }
+}
+
 @container style(--\\--hide-nitro-upsells: true) {
 	[class*="upsellContainer__"] { display: none; }
 }
