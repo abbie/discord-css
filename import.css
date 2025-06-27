@@ -29,6 +29,10 @@
 			gap: 0;
 		}
 	}
+
+	div[class*="jumpToPresentBar_"], div[class*="jumpToPresentBar_"]:active {
+		margin-bottom: 1px;
+	}
 }
 
 @container style(--\\--compact-context-menu: true) {
