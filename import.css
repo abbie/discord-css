@@ -32,6 +32,11 @@
 
 	div[class*="jumpToPresentBar_"], div[class*="jumpToPresentBar_"]:active {
 		margin-bottom: 1px;
+		min-height: 0;
+		button {
+			min-height: 0;
+			height: unset;
+		}
 	}
 }
 
