@@ -163,7 +163,8 @@
 }
 
 @container style(--\\--hide-server-boost-goal: true) {
-	div:has(> div[class*="textArea"] > div[class*="goalTextContainer"]) {
+	div:has(> div[class*="textArea"] > div[class*="goalTextContainer"]),
+	div#channels > ul > div > div[class*="containerWithMargin_"] {
 		display: none;
 	}
 }
