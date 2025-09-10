@@ -12,8 +12,8 @@
 	:is(form, form > div) {
 		& > div[class*="channelBottomBarArea"] {
 			--custom-channel-textarea-text-area-height: 44px;
-			div[class*="attachButton_"] > div[class*="icon_"] {
-				padding: 10px 16px;
+			div[class*="attachWrapper_"] {
+				padding: 6px;
 			}
 		}
 
@@ -37,10 +37,6 @@
 			min-height: 0;
 			height: unset;
 		}
-	}
-
-	.align-chat-input {
-		padding: 6px !important;
 	}
 }
 
