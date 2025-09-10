@@ -164,7 +164,7 @@
 
 @container style(--\\--hide-server-boost-goal: true) {
 	div:has(> div[class*="textArea"] > div[class*="goalTextContainer"]),
-	div#channels > ul > div > div[class*="containerWithMargin_"] {
+	div#channels > ul > div[class*="containerWithMargin_"] {
 		display: none;
 	}
 }
