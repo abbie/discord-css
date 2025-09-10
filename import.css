@@ -204,22 +204,22 @@
 }
 
 @container style(--\\--hide-gif-button: true) {
-	button[aria-label="Open GIF picker"],
-	div.expression-picker-chat-input-button > button:has(svg path[d^=" M-7,-10 C-8.65"]) {
+	[role=button][aria-label="Open GIF picker"],
+	div.expression-picker-chat-input-button > [role=button]:has(svg path[d^=" M-7,-10 C-8.65"]) {
 		display: none;
 	}
 }
 
 @container style(--\\--hide-sticker-button: true) {
-	button[aria-label="Open sticker picker"],
-	div.expression-picker-chat-input-button > button:has(svg path[d^=" M-6,-10 C-6,-10 6,-10 6,-10 C8.20"]) {
+	[role=button][aria-label="Open sticker picker"],
+	div.expression-picker-chat-input-button > [role=button]:has(svg path[d^=" M-6,-10 C-6,-10 6,-10 6,-10 C8.20"]) {
 		display: none;
 	}
 }
 
 @container style(--\\--hide-emoji-button: true) {
-	button[aria-label="Select emoji"],
-	button[class*="emojiButtonNormal_"] {
+	[role=button][aria-label="Select emoji"],
+	[role=button][class*="emojiButtonNormal_"] {
 		display: none;
 	}
 }
@@ -229,8 +229,8 @@
 }
 
 @container style(--\\--hide-gift-button: true) {
-	button[aria-label="Send a gift"],
-	div[class*="textArea_"] + div[class*="buttons_"] > div:has(> button svg path[d^=" M-7,10 C-8.1049995"]) {
+	[role=button][aria-label="Send a gift"],
+	div[class*="textArea_"] + div[class*="buttons_"] > div:has(> div svg path[d^=" M-7,10 C-8.1049995"]) {
 		display: none;
 	}
 }
