@@ -38,6 +38,10 @@
 			height: unset;
 		}
 	}
+
+	.align-chat-input {
+		padding: 6px !important;
+	}
 }
 
 @container style(--\\--compact-context-menu: true) {
