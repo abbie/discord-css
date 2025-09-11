@@ -15,6 +15,9 @@
 			div[class*="attachWrapper_"] {
 				padding: 6px;
 			}
+			div[class*="attachButton_"] > div[class*="icon__"] {
+				padding: 10px !important;
+			}
 		}
 
 		& > [class*="wrapper__"] {
