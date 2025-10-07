@@ -270,6 +270,7 @@
 		[aria-label="Active Developer"],
 		[aria-label="Completed a Quest"],
 		[aria-label^="Originally known as"],
+		[aria-label^="Collected the Orb Profile Badge"],
 		[aria-label^="HypeSquad"] {
 			display: none;
 		}
