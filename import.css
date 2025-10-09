@@ -194,7 +194,7 @@
 
 @container style(--\\--hide-hover-quick-reactions: true) {
 	:is(div[aria-label="Message Actions"], div[class*="message__"] > div[class*="buttonContainer_"] > div[class*="buttons__"]) > div {
-		& > :is([aria-label^="Click to react with"], div[class*="hoverBarButton_"]:has(> div[class*="icon_"])) { display: none; }
+		& :is([aria-label^="Click to react with"], div[class*="hoverBarButton_"]:has(> div[class*="icon_"])) { display: none; }
 		& > [class*="separator"] { display: none; }
 	}
 }
