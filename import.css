@@ -252,6 +252,10 @@
 	li[role="listitem"]:has(> div > a[href*="/store"]) { display: none; }
 }
 
+@container style(--\\--hide-quest-button: true) {
+	li[role="listitem"]:has(> div > a[href*="/quest-home"]) { display: none; }
+}
+
 @container style(--\\--hide-active-now: true) {
 	div[class*="nowPlayingColumn_"] { display: none; }
 }
