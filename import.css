@@ -228,7 +228,7 @@
 }
 
 @container style(--\\--hide-apps-button: true) {
-	[class*="channelAppLauncher"] { display: none !important; }
+	div.app-launcher-entrypoint { display: none !important; }
 }
 
 @container style(--\\--hide-gift-button: true) {
