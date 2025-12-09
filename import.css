@@ -246,6 +246,7 @@
 
 @container style(--\\--hide-shop-button: true) {
 	li[role="listitem"]:has(> div > a[href*="/shop"]) { display: none; }
+	div[class*="profileButtons_"] span:has(> button[aria-label="Shop"]) { display: none; }
 }
 
 @container style(--\\--hide-nitro-button: true) {
