@@ -55,7 +55,7 @@
 		div:is([role="menuitem"],[role="menuitemcheckbox"]), div[class*="hideInteraction_"] {
 			padding: 4px;
 
-			&:not([class*="colorDanger_"], :hover) div[class*="label_"] {
+			&:not([class*="colorDanger"], :hover) div[class*="label"] {
 				color: var(--interactive-normal);
 			}
 		}
