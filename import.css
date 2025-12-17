@@ -296,7 +296,7 @@
 
 @container style(--\\--darker-hovered-message: true) {
 	body {
-		--background-message-hover: #00001116;
+		--message-background-hover: #00001116;
 	}
 }
 
