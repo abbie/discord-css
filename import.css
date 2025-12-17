@@ -3,7 +3,7 @@
 		--custom-app-top-bar-height: 28px;
 	}
 
-	div[data-windows="true"][class*="bar_"] {
+	div[data-windows="true"][class*="bar"] {
 		--space-32: var(--custom-app-top-bar-height);
 	}
 }
@@ -15,8 +15,11 @@
 			div[class*="attachWrapper_"] {
 				padding: 6px;
 			}
-			div[class*="attachButton_"] > div[class*="icon__"] {
+			div[class*="attachButton"] > div[class*="icon"] {
 				padding: 10px !important;
+			}
+			div[class*="attachWrapper"] {
+				padding: 5px;
 			}
 		}
 
@@ -28,12 +31,12 @@
 			}
 		}
 
-		div[class*="textArea_"] + div[class*="buttons_"] {
+		div[class*="textArea"] + div[class*="buttons"] {
 			gap: 0;
 		}
 	}
 
-	div[class*="jumpToPresentBar_"], div[class*="jumpToPresentBar_"]:active {
+	div[class*="jumpToPresentBar"], div[class*="jumpToPresentBar"]:active {
 		margin-bottom: 1px;
 		min-height: 0;
 		button {
@@ -122,18 +125,18 @@
 /* --------------------------------------- */
 
 @container style(--\\--hide-nameplates: true) {
-	div[class*="childContainer__"][class*="nameplated__"] {
+	div[class*="childContainer"][class*="nameplated"] {
 		padding-right: inherit;
-		& > div[class*="container__"][style] {
+		& > div[class*="container"][style] {
 			display: none;
 		}
 	}
 
-	li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]:is([class*="fadeIn__"], :has(> div[class*="videoContainer__"])) {
+	li[class*="channel"] > div[class*="interactive"] > div[class*="container"]:is([class*="fadeIn"], :has(> div[class*="videoContainer"])) {
 		display: none;
 	}
 
-	[class*="closeButtonPlated__"] {
+	[class*="closeButtonPlated"] {
 		opacity: 0.7;
 		[class*="innerCloseButtonPlated"] {
 			background-color: transparent;
@@ -142,23 +145,23 @@
 }
 
 @container style(--\\--hide-guild-tags: true) {
-	[role="button"]:is([class*="clanTag__"], [class*="clanTagChiplet_"]),
-	[class*="container__"] > [class*="tags__"] > span:has(> [class*="chipletContainerInline_"]),
-	span:has(> span[class*="clanTagChiplet_"]) {
+	[role="button"]:is([class*="clanTag"], [class*="clanTagChiplet"]),
+	[class*="container"] > [class*="tags"] > span:has(> [class*="chipletContainerInline"]),
+	span:has(> span[class*="clanTagChiplet"]) {
 		display: none;
 	}
 }
 
 @container style(--\\--hide-profile-effects: true) {
-	[class*="profileEffects__"] { display: none; }
+	[class*="profileEffects"] { display: none; }
 }
 
 @container style(--\\--hide-avatar-decorations: true) {
-	[class*="avatarDecoration_"] { display: none; }
+	[class*="avatarDecoration"] { display: none; }
 }
 
 @container style(--\\--hide-gradient-glow-usernames: true) {
-	[class*="ColorGradient_"] {
+	[class*="ColorGradient"] {
 		background: none;
 		color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
 		-webkit-text-fill-color: initial;
@@ -167,7 +170,7 @@
 
 @container style(--\\--hide-server-boost-goal: true) {
 	div:has(> div[class*="textArea"] > div[class*="goalTextContainer"]),
-	div#channels > ul > div[class*="containerWithMargin_"] {
+	div#channels > ul > div[class*="containerWithMargin"] {
 		display: none;
 	}
 }
@@ -239,7 +242,7 @@
 }
 
 @container style(--\\--hide-help-button: true) {
-	div[data-fullscreen] div[class*="trailing_"] a[href="https://support.discord.com"] {
+	div[data-fullscreen] div[class*="-trailing"] a[href="https://support.discord.com"] {
 		display: none;
 	}
 }
