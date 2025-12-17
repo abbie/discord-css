@@ -165,6 +165,7 @@
 		background: none;
 		color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
 		-webkit-text-fill-color: initial;
+		filter: none;
 	}
 }
 
