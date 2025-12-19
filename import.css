@@ -103,11 +103,11 @@
 
 @container style(--\\--compact-channel-categories: true) {
 	ul[aria-label="Channels"] {
-		li[class*="containerDefault_"]:not([class*="containerDefault__"]) a[class*="link__"] {
+		li[class*="containerDefault"] :is(a, div)[class*="link"] {
 			--radius-sm: 5px;
 		}
 
-		li[class*="containerDefault__"] h3:is([class*="name__"], [class*="header__"]) > div {
+		li[class*="containerDefault"] h3:is([class*="name"], [class*="header"]) > div {
 			font-size: 95%;
 			font-weight: 600;
 			text-transform: uppercase;
