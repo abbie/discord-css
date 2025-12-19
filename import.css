@@ -262,7 +262,7 @@
 }
 
 @container style(--\\--hide-active-now: true) {
-	div[class*="nowPlayingColumn_"] { display: none; }
+	div[class*="nowPlayingColumn"] { display: none; }
 }
 
 @container style(--\\--hide-nitro-upsells: true) {
@@ -302,7 +302,7 @@
 }
 
 @container style(--\\--prevent-sidebar-resizing: true) {
-	[class*="sidebarResizeHandle_"] { display: none !important; }
+	[class*="sidebarResizeHandle"] { display: none !important; }
 }
 
 @container style(--\\--fix-minor-icon-misalignments: true) {
