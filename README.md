@@ -20,6 +20,7 @@ Place the following into Vencord's QuickCSS:
 
 	--\\--hide-nameplates: true;
 	--\\--hide-guild-tags: true;
+	--\\--hide-display-name-styles: true;
 	--\\--hide-profile-effects: true;
 	--\\--hide-avatar-decorations: false;
 	--\\--hide-gradient-glow-usernames: true;

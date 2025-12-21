@@ -152,6 +152,15 @@
 	}
 }
 
+@container style(--\\--hide-display-name-styles: true) {
+	[class*=headerText] > [class*=username],
+	[class*=repliedMessage] > [class*=username],
+	[class*=nicknameWithDisplayNameStyles] {
+		font-family: inherit;
+		letter-spacing: inherit;
+	}
+}
+
 @container style(--\\--hide-profile-effects: true) {
 	[class*="profileEffects"] { display: none; }
 }
