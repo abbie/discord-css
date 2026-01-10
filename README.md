@@ -4,7 +4,8 @@
 
 **A**: You can disable them in Discord's settings: `Settings` > `Accessibility` > `Display Name Styles`
 
-<img width="841" height="134" alt="image" src="https://github.com/user-attachments/assets/8b1f855b-9eaa-403a-841b-0cf3867a66ea" />
+<img width="824" height="131" alt="image" src="https://github.com/user-attachments/assets/147c8925-e339-427e-aaeb-4c39bdf937b6" />
+
 
 
 ## Usage
