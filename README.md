@@ -1,3 +1,12 @@
+## FAQ
+
+**Q**: Why is there no option to hide **Display Name Styles**?
+
+**A**: You can disable them in Discord's settings: `Settings` > `Accessibility` > `Display Name Styles`
+
+<img width="841" height="134" alt="image" src="https://github.com/user-attachments/assets/8b1f855b-9eaa-403a-841b-0cf3867a66ea" />
+
+
 ## Usage
 
 Place the following into Vencord's QuickCSS:
