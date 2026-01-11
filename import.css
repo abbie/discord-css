@@ -270,7 +270,7 @@
 }
 
 @container style(--\\--hide-vencord-desktop-platform-indicator: true) {
-	.vc-platform-indicator img[aria-label="Desktop"] { display: none; }
+	.vc-platform-indicator svg[aria-label="Desktop"] { display: none; }
 }
 
 @container style(--\\--hide-cluttery-badges: true) {
