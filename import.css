@@ -187,7 +187,7 @@
 }
 
 @container style(--\\--hide-user-activity: true) {
-	div[class*="activityPanel"] { display: none; }
+	section > div[class*="activityPanel"] { display: none; }
 }
 
 @container style(--\\--hide-context-menu-quick-reactions: true) {
