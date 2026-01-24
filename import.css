@@ -248,6 +248,12 @@
 	}
 }
 
+@container style(--\\--hide-inbox-button: true) {
+	div[data-fullscreen] div[class*="trailing_"] > [data-jump-section="global"] {
+		display: none;
+	}
+}
+
 @container style(--\\--hide-shop-button: true) {
 	li[role="listitem"]:has(> div > a[href*="/shop"]) { display: none; }
 	div[class*="profileButtons"] span:has(> button[aria-label="Shop"]) { display: none; }
