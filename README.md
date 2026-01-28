@@ -38,6 +38,7 @@ Place the following into Vencord's QuickCSS:
 	--\\--hide-user-activity: true;
 	--\\--hide-context-menu-quick-reactions: true;
 	--\\--hide-hover-quick-reactions: false;
+	--\\--hide-back-forward-buttons: true;
 	--\\--hide-image-edit-button: true;
 	--\\--hide-gif-button: false;
 	--\\--hide-sticker-button: false;

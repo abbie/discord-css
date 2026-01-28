@@ -203,6 +203,10 @@
 	}
 }
 
+@container style(--\\--hide-back-forward-buttons: true) {
+	div[class*="backForwardButtons"] { display: none; }
+}
+
 @container style(--\\--hide-image-edit-button: true) {
 	[aria-label="Edit Image with Apps"],
 	div[class*="imageContainer_"] > div[class*="hoverButtonGroup_"] > div[class*="hoverButton_"]:has(> div > svg path[d^=" M-6.554999828338623,1"]) {
