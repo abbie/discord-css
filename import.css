@@ -47,7 +47,7 @@
 }
 
 @container style(--\\--compact-context-menu: true) {
-	div[class*="clickTrapContainer"] div[role="menu"] {
+	[data-popover-layer="true"] div[role="menu"] {
 		div[role="group"] {
 			padding: 0;
 		}
@@ -191,7 +191,7 @@
 }
 
 @container style(--\\--hide-context-menu-quick-reactions: true) {
-	div[class*="clickTrapContainer"] div[role="menu"] :is([id*="message-quickreact"], [id*="message-actions-quickreact"]) {
+	[data-popover-layer="true"] div[role="menu"] :is([id*="message-quickreact"], [id*="message-actions-quickreact"]) {
 		display: none;
 	}
 }
