@@ -277,6 +277,7 @@
 
 @container style(--\\--hide-nitro-upsells: true) {
 	[class*="upsellContainer__"] { display: none; }
+	[class*="upsell__"] { display: none; }
 }
 
 @container style(--\\--hide-vencord-desktop-platform-indicator: true) {
