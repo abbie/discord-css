@@ -161,9 +161,15 @@
 }
 
 @container style(--\\--hide-gradient-glow-usernames: true) {
-	[class*="ColorGradient"] {
+	[class*="twoColorGradient"] {
 		background: none;
 		color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+		-webkit-text-fill-color: initial;
+		filter: none;
+	}
+	[class*="threeColorGradient"] {
+		background: none;
+		color: color-mix(in oklab, color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2)), var(--custom-gradient-color-3));
 		-webkit-text-fill-color: initial;
 		filter: none;
 	}
