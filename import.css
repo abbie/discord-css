@@ -161,17 +161,16 @@
 }
 
 @container style(--\\--hide-gradient-glow-usernames: true) {
-	[class*="twoColorGradient"] {
+	[class*="ColorGradient"] {
 		background: none;
-		color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
 		-webkit-text-fill-color: initial;
 		filter: none;
 	}
+	[class*="twoColorGradient"] {
+		color: color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+	}
 	[class*="threeColorGradient"] {
-		background: none;
 		color: color-mix(in oklab, color-mix(in oklab, var(--custom-gradient-color-1), var(--custom-gradient-color-2)), var(--custom-gradient-color-3));
-		-webkit-text-fill-color: initial;
-		filter: none;
 	}
 }
 
