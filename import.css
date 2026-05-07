@@ -292,6 +292,7 @@
 @container style(--\\--hide-cluttery-badges: true) {
 	/* TODO: make selectors language independent */
 	[aria-label="User Badges"] {
+    [aria-label^="Level"][aria-label$="Reached"],
 		[aria-label="Active Developer"],
 		[aria-label="Completed a Quest"],
 		[aria-label^="Originally known as"],
