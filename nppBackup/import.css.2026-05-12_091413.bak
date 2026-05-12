@@ -64,7 +64,7 @@
 
 @container style(--\\--compact-message-box-text-spacing: true) {
 	body {
-		--chat-markup-line-height: 1.125rem;
+		--chat-markup-line-height: 1rem;
 	}
 }
 
