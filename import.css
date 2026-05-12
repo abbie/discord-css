@@ -62,6 +62,12 @@
 	}
 }
 
+@container style(--\\--compact-message-box-spacing: true) {
+	body {
+		--chat-markup-line-height: 1rem;
+	}
+}
+
 @container style(--\\--compact-user-area: true) {
 	section[aria-label="User area"], div[class*="sidebar_"] > section[aria-label] {
 		left: 0 !important;
