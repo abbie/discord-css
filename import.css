@@ -62,7 +62,7 @@
 	}
 }
 
-@container style(--\\--compact-message-box-spacing: true) {
+@container style(--\\--compact-message-box-text-spacing: true) {
 	body {
 		--chat-markup-line-height: 1rem;
 	}
