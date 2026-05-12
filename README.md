@@ -24,7 +24,7 @@ Place the following into Vencord's QuickCSS:
 	--\\--compact-title-bar: true;
 	--\\--compact-input-box: true;
 	--\\--compact-context-menu: true;
-	--\\--compact-message-box-text-spacing: true;
+	--\\--compact-message-box-text-spacing: false;
 	--\\--compact-user-area: true;
 	--\\--compact-channel-categories: true;
 	--\\--compact-server-list: true;
