@@ -54,7 +54,7 @@ Place the following into Vencord's QuickCSS:
 	--\\--hide-nitro-upsells: true;
 	--\\--hide-vencord-desktop-platform-indicator: true;
 	--\\--hide-cluttery-badges: false;
-/* ^ hides quest, hypesquad, active dev, orb collector, and discriminator badges */
+/* ^ hides quest, hypesquad, active dev, orb collector, last meadow online, and discriminator badges */
 
 	--\\--darker-scrollbar: true;
 	--\\--darker-hovered-message: true;

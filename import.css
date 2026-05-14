@@ -296,7 +296,8 @@
 		[aria-label="Completed a Quest"],
 		[aria-label^="Originally known as"],
 		[aria-label^="Collected the Orb Profile Badge"],
-		[aria-label^="HypeSquad"] {
+		[aria-label^="HypeSquad"],
+		[aria-label^="Level"][aria-label$="Reached"] {
 			display: none;
 		}
 	}
