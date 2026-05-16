@@ -149,9 +149,9 @@
 }
 
 @container style(--\\--hide-guild-tags: true) {
-	[role="button"]:is([class*="clanTag"], [class*="clanTagChiplet"]),
-	[class*="container"] > [class*="tags"] > span:has(> [class*="chipletContainerInline"]),
-	span:has(> span[class*="clanTagChiplet"]) {
+	span[class*="guildTagContainer"] /* user profile & mini profile popout */,
+	span[class*="chipletContainerInner"][class*="clanTag"] /* member list (server & DM) */,
+	span:has(> span[class*="clanTagChiplet"]) /* chat message */ {
 		display: none;
 	}
 }
