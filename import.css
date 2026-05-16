@@ -34,6 +34,10 @@
 		div[class*="textArea"] + div[class*="buttons"] {
 			gap: 0;
 		}
+		
+		[class*=codeLine] {
+			line-height: 1.125rem;
+		}
 	}
 
 	div[class*="jumpToPresentBar"], div[class*="jumpToPresentBar"]:active {
@@ -44,10 +48,6 @@
 			height: unset;
 		}
 	}
-  
-  [class*="codeLine"] {
-    line-height: 1.125rem;
-  }
 }
 
 @container style(--\\--compact-context-menu: true) {
